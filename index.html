@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezha Maulana Rosa</title>
+    <link rel="icon" type="image/png" href="assets/images/icon.jpg">
+
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-slate-900">
+
+    <!-- NAVBAR -->
+    <header class="fixed w-full top-0 z-50 bg-white/90 backdrop-blur">
+        <nav class="max-w-6xl mx-auto flex items-center justify-center py-5 px-6">
+
+            <!-- Desktop menu (center) -->
+            <ul class="hidden md:flex items-center gap-8 text-extrabold">
+                <li><a href="#home" class="nav-link text-slate-600 hover:text-indigo-600 transition">Home</a></li>
+                <li><a href="#about" class="nav-link text-slate-600 hover:text-indigo-600 transition">About</a></li>
+                <li><a href="#projects" class="nav-link text-slate-600 hover:text-indigo-600 transition">Projects</a>
+                </li>
+                <!-- <li><a href="#experience"
+                        class="nav-link text-slate-600 hover:text-indigo-600 transition">Experience</a></li> -->
+            </ul>
+
+            <!-- Mobile button (kanan, muncul hanya di layar kecil) -->
+            <button id="menuToggle" class="md:hidden text-slate-700 text-2xl absolute right-4">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="md:hidden hidden bg-white">
+            <ul class="flex flex-col px-4 py-2 text-sm">
+                <li><a href="#home" class="block py-2 nav-link-mobile text-slate-700">Home</a></li>
+                <li><a href="#about" class="block py-2 nav-link-mobile text-slate-700">About</a></li>
+                <li><a href="#projects" class="block py-2 nav-link-mobile text-slate-700">Projects</a></li>
+                <!-- <li><a href="#experience" class="block py-2 nav-link-mobile text-slate-700">Experience</a></li> -->
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="pt-20">
+
+        <!-- HERO -->
+        <section id="home" class="min-h-screen flex items-center">
+            <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
+                <!-- Left text -->
+                <div class="space-y-3">
+
+
+                    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight">
+                        <strong>Hello I'm</strong>
+                        Rezha Maulana Rosa
+                    </h1>
+                    <p class="font-extrabold text-slate-900 text-2xl">And I'am Software Engineering
+                    </p>
+                    <p class="text-base md:text-lg text-slate-700">
+                        A student who has just completed his studies and wants to pursue a career in IT. Have a strong
+                        desire to always learn and find out new things related to the world of technology.
+                    </p>
+                    <!-- Social icons under buttons -->
+                    <div class="flex items-center gap-4 mt-4 text-slate-500 text-sm">
+
+                        <a href="https://github.com/Rezha26" target="_blank"
+                            class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center hover:border-slate-400 hover:text-slate-900 transition">
+                            <i class="fab fa-github text-lg"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/rezha-maulana-rosa-013652277/" target="_blank"
+                            class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center hover:border-indigo-500 hover:text-indigo-600 transition">
+                            <i class="fab fa-linkedin-in text-lg"></i>
+                        </a>
+
+                        <a href="https://www.instagram.com/rezhamr_" target="_blank"
+                            class="w-12 h-12 rounded-full border border-slate-300 flex items-center justify-center hover:border-pink-400 hover:text-pink-500 transition">
+                            <i class="fab fa-instagram text-lg"></i>
+                        </a>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-4">
+                        <a href="https://mail.google.com/mail/u/0/?fs=1&to=rezhamaulanarosa@gmail.com&su=Job+Opportunity+-+Hiring+Inquiry&body=Hi+Rezha,%0D%0A%0D%0AI+would+like+to+discuss+a+potential+job+opportunity+with+you.%0D%0A%0D%0ABest+regards,&tf=cm"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transform hover:-translate-y-0.5 transition">
+                            <i class="text-sm"></i>
+                            Here Me
+                        </a>
+                        <a download href="assets/dokuments/CV Rezha Maulana Rosa.pdf"
+                            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transform hover:-translate-y-0.5 transition">
+                            <i class="text-sm"></i>
+                            Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right photo -->
+                <div class="relative flex justify-center md:justify-end">
+                    <div class="relative w-full max-w-md">
+                        <!-- Soft glow -->
+                        <div
+                            class="absolute -inset-4 bg-gradient-to-tr from-indigo-200 via-sky-200 to-emerald-200 blur-3xl opacity-60">
+                        </div>
+
+                        <img src="assets/images/profile6.jpg"
+                            class="relative w-full object-cover rounded-3xl border border-slate-200 mb-4" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="py-20 border-t border-slate-100 bg-white">
+            <div class="max-w-4xl mx-auto px-4 text-center">
+                <h2 class="text-3xl font-extrabold mb-6 text-slate-900 tracking-tight">
+                    About Me
+                </h2>
+
+                <p class="text-slate-700 leading-relaxed text-lg">
+                    I'm a <strong>Fresh Graduate in Software Engineering</strong> with a strong passion for
+                    building reliable and efficient web applications as well as solving real-world problems
+                    through innovative technology. I enjoy working in both backend and system-level environments,
+                    and I continuously learn new tools and technologies to improve performance, automation,
+                    and operational efficiency.
+                </p>
+
+                <p class="text-slate-700 leading-relaxed mt-4 text-lg">
+                    My interests and focus areas include <strong>Web Development</strong>,
+                    <strong>System Administration</strong>, <strong>IT Support</strong>, and
+                    <strong>DevOps Engineering</strong>. With these diverse interests,
+                    I am able to understand technology from multiple perspectives—from developing responsive
+                    and structured web systems, managing server infrastructure, providing technical support,
+                    to implementing automation and workflow optimization. I believe that every challenge is
+                    an opportunity to grow, learn, and create value that helps organizations work smarter
+                    and achieve their goals.
+                </p>
+
+
+                <div class="flex flex-wrap justify-center gap-3 mt-6 text-sm">
+                    <span
+                        class="px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 font-medium">
+                        Web Development
+                    </span>
+                    <span
+                        class="px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 font-medium">
+                        System Administration
+                    </span>
+                    <span
+                        class="px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 font-medium">
+                        IT Support
+                    </span>
+                    <span
+                        class="px-4 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 font-medium">
+                        DevOps Engineering
+                    </span>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="py-20 border-t border-slate-100 bg-white">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-4 mb-8">
+                    <h2 class="text-2xl font-bold text-slate-900">Projects</h2>
+
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <!-- Project 1 -->
+
+                    <article
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:-translate-y-1 hover:shadow-md transition space-y-3">
+
+                        <img src="assets/images/Elsikomang.png"
+                            class="relative w-full object-cover rounded-3xl border border-slate-200 mb-4" />
+
+                        <div class="flex items-center justify-between text-xs text-slate-500">
+                            <span class="px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Web Dev · Laravel ·
+                                K-Means</span>
+                        </div>
+
+                        <h3 class="font-semibold text-slate-900">Elsikomang Klak Klik</h3>
+
+                        <p class="text-sm text-slate-700">
+                            A web platform for UMKM, tourism, and local entertainment in Indramayu,
+                            including product catalog, transactions, and product price clustering.
+                        </p>
+
+                        <a href="https://github.com/abdulghaniasykurthoriq/elsikomang-web.git" target="_blank"
+                            class="px-3 py-1 rounded-lg text-xs text-white bg-indigo-600 hover:bg-indigo-500">
+                            View details
+                        </a>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:-translate-y-1 hover:shadow-md transition">
+                        <img src="assets/images/ERP.png" class="relative w-full object-cover rounded-3xl border border-slate-200 mb-4" />
+                        <div class="flex items-center justify-between mb-3 text-xs text-slate-500">
+                            <span class="px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Backend · .NET ·
+                                PostgreSQL</span>
+                        </div>
+                        <h3 class="font-semibold mb-2 text-slate-900">ERP Mono</h3>
+                        <p class="text-sm text-slate-700 mb-3">
+                            Simple ERP system for purchasing, suppliers, and warehouse using ASP.NET Core,
+                            Dapper, and PostgreSQL as the main database.
+                        </p>
+                        <a href="https://github.com/Rezha26/ERP-Backend.git" target="_blank"
+                            class="px-3 py-1 rounded-lg text-xs text-white bg-indigo-600 hover:bg-indigo-500">
+                            View details
+                        </a>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article
+                        class="group rounded-2xl border border-slate-200 bg-white p-5 hover:border-indigo-300 hover:-translate-y-1 hover:shadow-md transition">
+                        <img src="assets/images/ptsp.png"
+                            class="relative w-full object-cover rounded-3xl border border-slate-200 mb-4" />
+                        <div class="flex items-center justify-between mb-3 text-xs text-slate-500">
+                            <span class="px-2 py-1 rounded-full bg-slate-50 border border-slate-200">Web Dev · HTML ·
+                                Bootstrap</span>
+                        </div>
+                        <h3 class="font-semibold mb-2 text-slate-900">PTSP Online Website</h3>
+                        <p class="text-sm text-slate-700 mb-3">
+                            Website for online public service at Pengadilan Agama Kotabaru,
+                            providing document templates and clearer information for case registration.
+                        </p>
+                        <a href="https://github.com/Rezha26/ptsp/tree/nova" target="_blank"
+                            class="px-3 py-1 rounded-lg text-xs text-white bg-indigo-600 hover:bg-indigo-500">
+                            View details
+                        </a>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <!-- <section id="experience" class="py-20 border-t border-slate-100 bg-slate-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6 text-slate-900">Experience</h2>
+
+                <div class="space-y-4">
+                    <div
+                        class="rounded-2xl border border-slate-200 bg-white p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 hover:shadow-md hover:-translate-y-1 transition">
+                        <div>
+                            <p class="text-sm text-slate-500">Intern / Project</p>
+                            <p class="font-semibold text-slate-900">Backend Developer – ERP Mono</p>
+                            <p class="text-sm text-slate-700">
+                                Worked on purchase order module, suppliers, and warehouse management using .NET and
+                                PostgreSQL.
+                            </p>
+                        </div>
+                        <div class="text-xs text-slate-500 md:text-right">
+                            <p>2024 – 2025</p>
+                            <p>PT / Internal Project</p>
+                        </div>
+                    </div>
+
+                    <div
+                        class="rounded-2xl border border-slate-200 bg-white p-5 flex flex-col md:flex-row md:items-center md:justify-between gap-3 hover:shadow-md hover:-translate-y-1 transition">
+                        <div>
+                            <p class="text-sm text-slate-500">CPNS Latsar Project</p>
+                            <p class="font-semibold text-slate-900">Web Developer – PTSP Online</p>
+                            <p class="text-sm text-slate-700">
+                                Improved public service by creating a “Template” feature for legal documents
+                                and clearer instructions on the website.
+                            </p>
+                        </div>
+                        <div class="text-xs text-slate-500 md:text-right">
+                            <p>2025</p>
+                            <p>Pengadilan Agama Kotabaru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+    </main>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop"
+        class="hidden fixed bottom-6 right-6 w-10 h-10 rounded-full bg-indigo-600 hover:bg-indigo-500 text-white text-sm flex items-center justify-center shadow-lg shadow-indigo-500/40 transition">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-slate-100 text-center py-4 text-xs text-slate-500 bg-white">
+        © 2025 Built by <span class="text-slate-800 font-medium">Rezha Maulana Rosa</span>
+    </footer>
+
+    <!-- SIMPLE INTERACTIVITY -->
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        if (menuToggle) {
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+        }
+
+        // Hide mobile menu after clicking a link
+        document.querySelectorAll('.nav-link-mobile').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('hidden');
+            } else {
+                backToTop.classList.add('hidden');
+            }
+        });
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
